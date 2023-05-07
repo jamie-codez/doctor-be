@@ -17,3 +17,5 @@ const registrationSchema = z.object({
         },
     }),
 });
+
+export default registrationSchema;
