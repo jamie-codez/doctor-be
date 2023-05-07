@@ -1,6 +1,5 @@
-import prisma from "../../constants/config";
+import prisma from "../../constants/config.js";
 import bcrypt from "bcrypt";
-
 
 const registerService = async (req, res) => {
     try {
@@ -32,5 +31,6 @@ const registerService = async (req, res) => {
         console.error(`ERROR: ${error.message}`);
         res.status(500).json({ message: "Error occurred try again" });
     }
-
 };
+
+export default registerService;

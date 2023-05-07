@@ -6,6 +6,7 @@ import prisma from "./constants/config.js";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import colors from "colors";
+import accountsRoutes from "./routes/accountRoutes.js";
 
 dotenv.config();
 
@@ -47,6 +48,8 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+app.use("/api", accountsRoutes);
 
 app.get("/", (req, res) => {
     res.json({ message: "Hello" });
