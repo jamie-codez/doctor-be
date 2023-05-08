@@ -30,3 +30,22 @@
 29 timing npm:load Completed in 25ms
 30 silly logfile done cleaning log files
 31 http fetch GET 200 https://registry.npmjs.org/npm 6289ms (cache miss)
+32 timing command:run Completed in 1708915ms
+33 verbose stack Error: command failed
+33 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/lib/index.js:53:27)
+33 verbose stack     at ChildProcess.emit (node:events:511:28)
+33 verbose stack     at maybeClose (node:internal/child_process:1098:16)
+33 verbose stack     at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+34 verbose pkgid backend@1.0.0
+35 verbose cwd /usr/src/app
+36 verbose Linux 5.15.0-69-generic
+37 verbose node v20.1.0
+38 verbose npm  v9.6.6
+39 error path /usr/src/app
+40 error command failed
+41 error signal SIGTERM
+42 error command sh -c nodemon server.js
+43 verbose exit 1
+44 timing npm Completed in 1708975ms
+45 verbose code 1
+46 error A complete log of this run can be found in: /usr/src/app/.npm/_logs/2023-05-07T22_59_36_406Z-debug-0.log
